@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Calculator</title>
+ <style type="text/css">
+  .tombol{
+   background-color: rgb(0, 255, 76);
+  }
+  .tabel{
+   background-image: linear-gradient(blue, yellow, red);
+   margin: 40px;
+   padding: 40px;
+  }
+ </style>
+</head>
+<body>
+ <form name="calculator" id="calculator">
+  
+  <center><table style="background-color: " class="tabel">
+   <h1>Kalkulatorku</h1>
+   <tr>
+    <td>Angka 1</td><td>:</td><td><input type="number" name="angka1"></td>
+    
+   </tr>
+   <tr>
+    <td>Angka 2</td><td>:</td><td><input type="number" name="angka2"></td>
+    
+   </tr>
+   <tr>
+    <td>Hasil</td><td>:</td><td><input type="number" name="hasil"></td>
+   </tr>
+   <tr>
+    <td colspan="3" align="center">
+     <input class="tombol" type="button" onclick="tambah()" value="  +  ">
+     <input class="tombol" type="button" onclick="kurang()" value="  -  ">
+
+ 
+
+     <input class="tombol" type="button" onclick="kali()" value="  *  ">
+
+ 
+
+     <input class="tombol" type="button" onclick="bagi()" value="  /  ">
+    </td>
+   </tr>
+  </table>
+</center>
+ </form>
+ <script src="js/tugas6.js"></script>
+</body>
+</html>
