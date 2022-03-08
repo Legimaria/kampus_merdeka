@@ -1,0 +1,34 @@
+<script>
+class StatGemp {
+constructor(lokasi, skala) {
+this.lokasi=lokasi;
+this.skala=skala;    
+}
+damgemp() {
+    let dampak;
+    if(this.skala >= 0 && this.skala <= 2) {
+    dampak ="Dampak Tidak Terasa";
+    }else if(this.skala > 2 && this.skala <= 5) {
+        dampak="Bangunan Hanya Retak";
+    }else if(this.skala > 5 && this.skala <= 7) {
+        dampak="Bangunan Rubuh";
+    }else if(this.skala >7 ) {
+        dampak="Potensi Tsunami";
+        } 
+    else {
+        dampak='Tidak Ada Gempa';
+        }
+    document.write(
+        `Lokasi Gempa : ${this.lokasi}
+        <br/> Skala Gempa : ${this.skala}
+        <br>Dampak Gempa : ${dampak} <hr>`
+            )
+        }
+    }
+    let negara=["Rusia","Argentina","Vietnam","Jerman","Indonesia"]
+    let skala= [9.2, 4.7, 2.1, 5.5, 1.5];
+    for(let x in negara){
+        let papua= new StatGemp(negara[x], skala[x]);
+        papua.damgemp();
+    }
+</script>
