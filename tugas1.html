@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gambar Dan Audio Hewan</title>
+        <link rel="icon" href="https://cdn-icons.flaticon.com/png/512/3397/premium/3397536.png?token=exp=1646837741~hmac=b6cac53e4c611b15b5d18942d0c46e3a">
+        <script src="js/jquery.js"></script>
+        <script>
+            $("document").ready(function () {
+                $("div.ayam").mouseover(function () {
+                    $(this).css({
+                        background: "url('images/ayam.jpg')"
+                    });
+
+                    $("div.ayam").mouseenter(function () {
+                        $("<audio></audio>").attr({'src':'audio/ayam.mp3', 'volume':3,'autoplay':'autoplay'}).appendTo("body");
+                    });
+                });
+
+                $("div.ayam").mouseout(function () {
+                    $(this).css({
+                        background: "#DBCCB7"
+                    });
+                });
+
+                $("div.anjing").mouseover(function () {
+                    $(this).css({
+                        background: "url('images/anjing.jpg')"
+                    });
+
+                    $("div.anjing").mouseenter(function () {
+                        $("<audio></audio>").attr({ 'src':'audio/anjing.mp3', 'volume':3,'autoplay':'autoplay'}).appendTo("body");
+                    });
+                });
+
+                $("div.anjing").mouseout(function () {
+                    $(this).css({
+                        background: "#DBCCB7"
+                    });
+                });
+
+                $("div.kucing").mouseover(function () {
+                    $(this).css({
+                        background: "url('images/kucing.jpg')"
+                    });
+
+                    $("div.kucing").mouseenter(function () {
+                        $("<audio></audio>").attr({ 'src':'audio/kucing.mp3', 'volume':3,'autoplay':'autoplay'}).appendTo("body");
+                    });
+                });
+
+                $("div.kucing").mouseout(function () {
+                    $(this).css({
+                        background: "#DBCCB7"
+                    });
+                });
+
+                $("div.kambing").mouseover(function () {
+                    $(this).css({
+                        background: "url('images/kambing.jpg')"
+                    });
+
+                    $("div.kambing").mouseenter(function () {
+                        $("<audio></audio>").attr({ 'src':'audio/kambing.mp3', 'volume':3,'autoplay':'autoplay'}).appendTo("body");
+                    });
+                });
+
+                $("div.kambing").mouseout(function () {
+                    $(this).css({
+                        background: "#DBCCB7"
+                    });
+                });
+
+                $("div.sapi").mouseover(function () {
+                    $(this).css({
+                        background: "url('images/sapi.jpg')"
+                    });
+
+                    $("div.sapi").mouseenter(function () {
+                        $("<audio></audio>").attr({ 'src':'audio/sapi.mp3', 'volume':3,'autoplay':'autoplay'}).appendTo("body");
+                    });
+
+                });
+
+                $("div.sapi").mouseout(function () {
+                    $(this).css({
+                        background: "#DBCCB7"
+                    });
+                });
+
+                $("div.burung").mouseover(function () {
+                    $(this).css({
+                        background: "url('images/burung.jpg')"
+                    });
+
+                    $("div.burung").mouseenter(function () {
+                        $("<audio></audio>").attr({'src':'audio/burung.mp3', 'volume':3,'autoplay':'autoplay'}).appendTo("body");
+                    });
+                });
+
+                $("div.burung").mouseout(function () {
+                    $(this).css({
+                        background: "#DBCCB7"
+                    });
+                });
+
+                $("div.kuda").mouseover(function () {
+                    $(this).css({
+                        background: "url('images/kuda.jpg')"
+                    });
+
+                    $("div.kuda").mouseenter(function () {
+                        $("<audio></audio>").attr({ 'src':'audio/kuda.mp3', 'volume':3,'autoplay':'autoplay'}).appendTo("body");
+                    });
+                });
+
+                $("div.kuda").mouseout(function () {
+                    $(this).css({
+                        background: "#DBCCB7"
+                    });
+                });
+
+                $("div.singa").mouseover(function () {
+                    $(this).css({
+                        background: "url('images/singa.jpg')"
+                    });
+
+                    $("div.singa").mouseenter(function () {
+                        $("<audio></audio>").attr({ 'src':'audio/singa.mp3', 'volume':3,'autoplay':'autoplay'}).appendTo("body");
+                    });
+                });
+
+                $("div.singa").mouseout(function () {
+                    $(this).css({
+                        background: "#DBCCB7"
+                    });
+                });
+
+                $("div.ular").mouseover(function () {
+                    $(this).css({
+                        background: "url('images/ular.jpg')"
+                    });
+
+                    $("div.ular").mouseenter(function () {
+                        $("<audio></audio>").attr({ 'src':'audio/ular.mp3', 'volume':3,'autoplay':'autoplay'}).appendTo("body");
+                    });
+                });
+
+                $("div.ular").mouseout(function () {
+                    $(this).css({
+                        background: "#DBCCB7"
+                    });
+                });
+
+                $("div.gajah").mouseover(function () {
+                    $(this).css({
+                        background: "url('images/gajah.jpg')"
+                    });
+
+                    $("div.gajah").mouseenter(function () {
+                        $("<audio></audio>").attr({ 'src':'audio/gajah.mp3', 'volume':3,'autoplay':'autoplay'}).appendTo("body");
+                    });
+
+                });
+
+                $("div.gajah").mouseout(function () {
+                    $(this).css({
+                        background: "#DBCCB7"
+                    });
+                });
+            });
+        </script>
+        <style type="text/css">
+            div {
+                background: #b7dadb;
+                width: 225px;
+                height: 225px;
+                float: left;
+                margin: 10px;
+                cursor: pointer;
+            }
+            p{
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body bgcolor="#2E8B8E">
+            <center><bold><p>Dekati Pada Setiap Kotak Untuk Menampilkan Hewan</p></bold></center>
+            <div>
+                <div class="ayam"></div>
+                <p>Ayam</p>
+            </div>
+            <div>
+                <div class="anjing"></div>
+                <p>Anjing</p>
+            </div>
+            <div>
+                <div class="kucing"></div>
+                <p>Kucing</p>
+            </div>
+            <div>
+                <div class="kambing"></div>
+                <p>Kambing</p>
+            </div>
+            <div>
+                <div class="sapi"></div>
+                <p>Sapi</p>
+            </div>
+            <div>
+                <div class="burung"></div>
+                <p>Burung</p>
+            </div>
+            <div>
+                <div class="kuda"></div>
+                <p>Kuda</p>
+            </div>
+            <div>
+                <div class="singa"></div>
+                <p>Singa</p>
+            </div>
+            <div>
+                <div class="ular"></div>
+                <p>Ular</p>
+            </div>
+            <div>
+                <div class="gajah"></div>
+                <p>Gajah</p>
+            </div>
+        </body>
+</html>
